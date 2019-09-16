@@ -1,0 +1,192 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-color: grey;
+}
+/*-----------Form Container------------*/
+.container{
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 650px;
+    justify-self: center;
+    align-self: center;
+}
+/*----Left side----*/
+.title{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(18, 117, 199);
+    text-align: center;
+}
+span{
+    color: white;
+    font-size: 5rem;
+}
+.text{
+    text-align:left;
+    color: white;
+    width: 70%;
+    margin: 5px auto;
+}
+.text p{
+    font-size: 1rem;
+}
+.text p strong{
+    color: black;
+    font-size: 1.3rem;
+}
+
+.sign-up-btn{
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid rgb(18, 117, 199);
+    border-radius: 5px;
+    margin: 0 auto;
+    color: rgb(18, 117, 199);
+    text-align: center;
+    font-size: 1.4rem;
+    box-shadow: 0 3px 5px black;
+    cursor: pointer;
+}
+.sign-up-btn:hover{
+    color: white;
+    background-color: rgb(18, 117, 199);
+    border: 2px solid white;
+}
+
+/*----Right Side----*/
+.form-wrap{
+    margin-top: 0px;
+    width: 100%;
+    background-color:rgb(248, 247, 247);
+    color: white;
+    
+}
+.inner-wrap{
+    background-color: rgb(70, 69, 70);
+    padding: 10px;
+    margin: 20px auto;
+    width: 60%;
+    height: 450px;
+    border-top: 5px solid rgb(18, 117, 199);
+    border-radius: 5px;
+    box-shadow: 5px 6px 10px grey;
+}
+.form-head{
+    font-family: poppins;
+    text-align: center;
+    border: 5px solid gray;
+}
+.btn{
+    background-color: rgb(18, 117, 199);
+    margin-top: 5px;
+    border: none;
+    text-align: center;
+    height: 30px;
+    width: 120px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+    border: 2px solid rgb(18, 117, 199);
+    color: rgb(18, 117, 199);
+}
+.fill{
+    margin-bottom: 5px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.content{
+    margin: 10px auto;
+    padding: 10px;
+}
+.forgot{
+    text-align: right;
+}
+a{
+    text-decoration: underline;
+    color: rgb(18, 117, 199);
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+.alternate{
+    text-align: center;
+    margin-top: 3rem;
+}
+.icons{
+    text-align: center;
+}
+
+.sign-up{
+    text-align: center;
+}
+/*--------------footer------------------*/
+
+.footer{
+    height: 30px;
+    text-align: center;
+    color: white;
+    margin-top: 0;
+    width: 100%;
+    background-color: rgb(18, 117, 199);
+}
+
+.footer p{
+    padding-top: 10px;
+}
+
+/*------------Media Queries---------------*/
+
+/*----Large Screens*/
+@media (min-width:850px) and (max-width:1010px){
+    .inner-wrap{
+        width: 80%;
+    }
+}
+
+/*----Tablet Screens----*/
+
+@media (min-width:750px) and (max-width:850px){
+    .inner-wrap{
+        width: 90%;
+    }
+}
+
+@media(min-width:400px) and (max-width:750px){
+    .container{
+        padding: 0;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+        justify-self: center;
+        align-self: center;
+    }
+    .inner-wrap{
+        width: 70%;
+    }
+}
+
+/*----Smartphone Screens----*/
+@media(min-width:250px) and (max-width:400px){
+    .container{
+        padding: 0;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+        justify-self: center;
+        align-self: center;
+    }
+    .inner-wrap{
+        width:92%;
+    }
+}
