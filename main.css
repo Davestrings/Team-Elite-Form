@@ -20,22 +20,6 @@ h2{
     justify-self: center;
     align-self: center;
 }
-.fb-icon{
-    padding-right: 10px;
-    padding-left: 10px;
-}
-.tw-icon{
-    padding-right: 10px;
-    padding-left: 10px;
-}
-.whats-icon{
-    padding-right: 10px;
-    padding-left: 10px;
-}
-.insta-icon{
-    padding-right: 10px;
-    padding-left: 10px;
-}
 /*----Left side----*/
 .title{
     width: 100%;
@@ -48,20 +32,20 @@ span{
     font-size: 5rem;
 }
 .text{
-    text-align:left;
+    text-align: center;
     color: white;
     width: 70%;
     margin: 5px auto;
 }
 .text p{
-    font-size: 1rem;
+    font-stretch: expanded;
 }
 .text p strong{
     color: black;
-    font-size: 1.3rem;
 }
 .sign-up{
     margin-top: 40px;
+    text-align: center;
 }
 .sign-up-btn{
     width: 200px;
@@ -81,7 +65,33 @@ span{
     background-color: #E3D87E;
     border: 0.5px solid white;
 }
-
+/*---Social Media Icon---*/
+.alternate{
+    text-align: center;
+    margin-top: 3rem;
+}
+.icons{
+    display: flex;
+    margin-right: 100px;
+    margin-left: 170px;
+    padding: 10px;
+}
+.fb-icon{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.tw-icon{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.whats-icon{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.insta-icon{
+    padding-right: 10px;
+    padding-left: 10px;
+}
 /*----Right Side----*/
 .form-wrap{
     margin-top: 0px;
@@ -96,16 +106,32 @@ span{
     margin-top: 100px;
     margin-left: 100px;
     width: 60%;
-    height: 300px;
+    height: 360px;
     /*border-top: 5px solid rgb(18, 117, 199);*/
     border-radius: 20px;
     box-shadow: 1px 2px 3px grey;
 }
-/*.form-head{
-    font-family: poppins;
-    text-align: center;
-    border: 5px solid gray;
-}*/
+.content{
+    margin: 10px auto;
+    padding-left: 50px;
+    /*padding-right: 50px;*/
+    /*text-align: center;
+    align-content: center;*/
+}
+.form-login{
+    margin-top: 20px;
+}
+.label{
+    align-content: center;
+}
+.fill{
+    background-color: white;
+    margin-bottom: 5px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    width: 90%;
+}
 .btn{
     font-size: 20px;
     font-weight: bold;
@@ -120,60 +146,11 @@ span{
     cursor: pointer;
 }
 .btn:hover{
-    background-color: #E3D87E;
+    background-color: #BBCEA8;
     border: 0.5px solid #0B0A07;
     color: rgb(252, 252, 252);
 }
-.fill{
-    background-color: white;
-    margin-bottom: 5px;
-    height: 30px;
-    border: none;
-    border-radius: 5px;
-    width: 90%;
-}
-.label{
-    align-content: center;
-}
-.content{
-    margin: 10px auto;
-    padding-left: 50px;
-    /*padding-right: 50px;*/
-    /*text-align: center;
-    align-content: center;*/
-}
-/*
-.forgot{
-    padding-bottom: 80px;
-    margin-bottom: 80px;
-}
-.forgot{
-    text-align: right;
-}*/
-a{
-    text-decoration: underline;
-    color: rgb(18, 117, 199);
-}
-a:hover{
-    color: white;
-    text-decoration: none;
-}
-.alternate{
-    text-align: center;
-    margin-top: 3rem;
-}
-.icons{
-    display: flex;
-    margin-right: 100px;
-    margin-left: 170px;
-    padding: 10px;
-}
-
-.sign-up{
-    text-align: center;
-}
 /*--------------footer------------------*/
-
 .footer{
     height: 30px;
     text-align: center;
@@ -182,9 +159,35 @@ a:hover{
     width: 100%;
     background-color: #748067;
 }
-
 .footer p{
     padding: 10px auto;
+}
+
+/*
+.forgot{
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+}
+.forgot{
+    text-align: right;
+}*/
+
+
+/*.form-head{
+    font-family: poppins;
+    text-align: center;
+    border: 5px solid gray;
+}*/
+
+
+
+a{
+    text-decoration: underline;
+    color: rgb(18, 117, 199);
+}
+a:hover{
+    color: white;
+    text-decoration: none;
 }
 
 /*------------Media Queries---------------*/
