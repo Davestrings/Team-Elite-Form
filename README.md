@@ -1,6 +1,6 @@
 # Team-Elite-Form
 This is the first HNG main internship task.
-#Authentication is done with php with sql database
+#Authentication is done with php and sql database
 database-name is "slack"
 table-name is "team_elite"
 xampp software is needed to run this program
