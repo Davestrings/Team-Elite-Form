@@ -6,93 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Get the best learning experience with Team Elite. We offer the best programming lessons. Kickstart your Tech career here.">
     <meta name="keyword" content="Team Elite, Html, Css, Javascript, Vanilla js, Java, PHP, Lavarel, Vue, Vue js, React, React js, Node, Node js, Django, Wordpress,">
-    <title>Login Form</title>
+    <title>Login |team Elite</title>
 
     <!--Fonts and icon-->
+    <link rel="icon" href="https://res.cloudinary.com/ddu0ww15f/image/upload/v1568675580/icons8-joe-pineapples-16_xhpzbw.png" type="img/x-icon">
     <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="stylesheet" href="Fontawesome-all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
 </head>
-<body style="">
+<body>
     <div class="container">
 
         <!--LHS-->
 
         <div class="title">
-        <div class="tent">
-            <h1>Join the <span>fun.</span></h1>
+            <h1>Join Team <span>ELITE.</span></h1>
             <div class="text">
-                <p>Welcome to <strong>Team Elite.</strong> We make learning a fun thing.</p>
-                <p>We are a team of professional programmers who believe in the value creation.
-                    This is why we have put together the best lessons you can get to start your career in tech.
-                    Join the ride now. We promise you fun!
-                </p>
-                <p>You will get the best programming tutorials here.</p>
+                <p>
+                    Be part of the growing community of <br> 
+                    developers with the aim of using tech <br>
+                    to change the world.
+                </p>  
             </div>
-        </div>
-            <div>
-                <input class="sign-up-btn" type="submit" name="sign-up" value="Sign Up">
+            <div class="sign-up">
+                <a href="signup.php"><input class="sign-up-btn" type="submit" name="sign-up" value="Sign Up"></a>
+            </div>
+            <div class="alternate">
+                <div class="icons">
+                    <div class="fb-icon">
+                        <a href="https://www.facebook.com" target="_blank"><img src="https://res.cloudinary.com/ddu0ww15f/image/upload/v1568643675/icons8-facebook-50_1_bltqey.png" alt=""></a>
+                    </div>
+                    <div class="tw-icon">
+                        <a href="https://www.twitter.com" target="_blank"><img src="https://res.cloudinary.com/ddu0ww15f/image/upload/v1568643869/icons8-twitter-50_nhjr6m.png" alt=""></a>
+                    </div>
+                    <div class="whats-icon">
+                        <a href="https://www.whatsapp.com" target="_blank"><img src="https://res.cloudinary.com/ddu0ww15f/image/upload/v1568644039/icons8-whatsapp-50_bb3r0f.png" alt=""></a>
+                    </div>
+                    <div class="insta-icon">
+                        <a href="https://www.instagram.com" target="_blank"><img src="https://res.cloudinary.com/ddu0ww15f/image/upload/v1568643779/icons8-instagram-50_1_gafqhd.png" alt=""></a>
+                    </div>
+                 </div>
+                    <h2>
+                        Login Using Social Media
+                    </h2>
             </div>
         </div>
 
         <!--RHS-->
         
-        <div class="form-wrap">
             <div class="inner-wrap">
                 <div class="form-head">
                     <h2>Login</h2>
-                </div>  
-                <form class="content" method="POST" action="Login.php">
-                    <label for="email" class="label">Username:</label><br>
-                    <input type="email" class="fill" name="email"  placeholder="Type Your Email" required><br>
-                    <label for="password" class="label">Password:</label><br>
-                    <input type="password" class="fill" name="password"  placeholder="Type Your Password" required><br>
-                    <input type="submit" class="btn" name="submit" value ="Login"><br>
-					   <?php
-                if(isset($_POST['submit'])){
-                    $user = $_POST['email'];
-                    $password = $_POST['password'];
-                    $logindetails = $user . ',' . $password . " ";
-                    $fileopen = fopen('crendential.txt', 'a+');
-                    $file = file_get_contents('crendential.txt'); 
-                   // print $file;
-                    $search = $user . ','; 
-                   // print $search;
-                   // if(strpos($file, $search)) ${ 
-                     //       echo 'Email Address Already Exist' . $user;
-                       //  }
+                </div> 
+                <div class="content">
+                    <form action="" class="form-login" method="post">
+                        <p style="text-align:center;"><?php include 'auth.php'?></p>
 
-                       // else 
                         
-                            if(fwrite ($fileopen, $logindetails)){
-                                //header("Location: Add Location");
-                                echo "User Details Valid";
-                        }
-                            
-                        
-                    fclose($fileopen);
-                }
-                ?>
-                </form>
-             
-                <div class="forgot">
-                    <p><a href="#">Forgot password?</a></p>
-                </div>
-                <div class="alternate">
-                        <p>Or Login using</p>
-                    <div class="icons">
-                        <a href="https://www.facebook.com" target="_blank"><i class="fas fa-facebook-square fa-2x fa-fw"></i></a>
-                        <a href="https://www.twitter.com" target="_blank"><i class="fas fa-twitter-square fa-2x fa-fw"></i></a>
-                        <a href="https://www.instagram.com" target="_blank"><i class="fas fa-instagram fa-2x fa-fw"></i></a>
-                    </div>
-                </div>
-                <div class="sign-up">
-                    <p><a href="#">Sign Up</a></p>
+                        <label for="email" class="label">Email :</label><br>
+                        <input type="email" class="fill" name="email"  placeholder="Type Your Email" required><br><br>
+                        <label for="password" class="label">Password:</label><br>
+                        <input type="password" class="fill" name="password"  placeholder="Type Your Password" required><br><br>
+                        <input type="submit" class="btn" name="submit" value="Login"><br>
+                        <div class="forgot">
+                                <p><a href="#">Forgot password?</a></p>
+                            </div>
+                    </form>
+                    
                 </div>
             </div>
-        </div>
     </div>
-    <div class="footer">
-        <p>&copy; 2019 | Team Elite</p>
-    </div>
+            <div class="footer">
+                <p>&copy; 2019 | Team Elite</p>
+            </div>
 </body>
 </html>

@@ -3,13 +3,12 @@ body{
     padding: 0;
     margin: 0;
     height: 100%;
-    background-color: #0B0A07;
 }
 h1{
-    color: #748067;
+    color: black;
 }
 h2{
-    color: #E3D87E;
+    color:black;
 }
 /*---------------------------Form Container----------------------------*/
 .container{
@@ -24,7 +23,7 @@ h2{
 .title{
     width: 100%;
     height: 100%;
-    background-color: #0B0A07;
+    background-color: rgb(18, 117, 199);
     text-align: center;
 }
 span{
@@ -54,15 +53,15 @@ span{
     border: 0.5px solid rgb(18, 117, 199);
     border-radius: 5px;
     margin: 0 auto;
-    color: #E3D87E;
+    color: rgb(18, 117, 199);
     text-align: center;
     font-size: 1.4rem;
-    box-shadow: 1px 3px black;
+    box-shadow: 1px 3px 7px black;
     cursor: pointer;
 }
 .sign-up-btn:hover{
     color: white;
-    background-color: #E3D87E;
+    background-color: rgb(18, 117, 199);
     border: 0.5px solid white;
 }
 /*---Social Media Icon---*/
@@ -75,10 +74,15 @@ span{
     margin: 0px auto;
     padding: 10px;
     width: 50%;
-    min-height: 20px 
+    min-height: 20px ;
+}
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 .fb-icon{
-    margin-left: 25px;
+    margin-left: 5%;
     padding-right: 10px;
     padding-left: 10px;
 }
@@ -99,18 +103,17 @@ span{
     margin-top: 0px;
     width: 100%;
     background-color: #030027;
-    color: white;
+    /*color: white;*/
 }
 .inner-wrap{
-    background-color: #BBCEA8;
+    background-color: grey;
     padding: 10px;
-    margin-top: 100px;
-    margin-left: 100px;
-    width: 60%;
+   margin: 0px auto;
+    width: 70%;
     min-height: 390px;
     /*border-top: 5px solid rgb(18, 117, 199);*/
     border-radius: 10px;
-    box-shadow: 0px 2px 5px grey;
+    box-shadow: 2px 3px 10px black;
 }
 .content{
     margin: 10px auto;
@@ -124,6 +127,7 @@ span{
 }
 .label{
     align-content: center;
+    color: white;
 }
 .fill{
     background-color: white;
@@ -136,32 +140,29 @@ span{
 .btn{
     font-size: 20px;
     font-weight: bold;
-    background-color: #0B0A07;
+    background-color: rgb(18, 117, 199);
     margin-top: 5px;
     border: none;
     text-align: center;
-    height: 30px;
+    height: 40px;
     width: 90%;
     border-radius: 10px;
-    color: #E3D87E;
+    color: white;
     cursor: pointer;
 }
 .btn:hover{
-    background-color: #E3D87E;
-    border: 0.5px solid #0B0A07;
-    color: rgb(252, 252, 252);
+    background-color: white;
+    border: 0.5px solid rgb(18, 117, 199);
+    color: rgb(18, 117, 199);
 }
 /*--------------footer------------------*/
 .footer{
     height: 30px;
     text-align: center;
     color: white;
-    margin-top: 0;
+    margin-top: 5px;
     width: 100%;
-    background-color: #748067;
-}
-.footer p{
-    padding: 10px auto;
+    background-color: rgb(18, 117, 199);
 }
 
 /*
@@ -172,6 +173,9 @@ span{
 .forgot{
     text-align: center;
     margin: 0 auto;
+}
+.forgot a{
+    color: white;
 }
 
 
@@ -186,7 +190,7 @@ span{
 
 a{
     text-decoration: underline;
-    color: rgb(18, 117, 199);
+    color: white;
 }
 a:hover{
     color: white;
@@ -198,18 +202,26 @@ a:hover{
                     /*-----------------------------SIGN UP PAGE STYLE-----------------------*/
  .container2{
     padding: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: block;
+
+   /* grid-template-columns: 1fr 1fr;
     grid-template-rows: 650px;
     justify-self: center;
-    align-self: center;
+    align-self: center;*/
 }
-.header{
+.signhead{
+    width: 50%;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+}
+/*.header{
     width: 100%;
     height: 30px;
     text-align: center;
     grid-column: 1/4;
-}
+}*/
 h3{
     color: #E3D87E;
 }
@@ -219,12 +231,12 @@ p{
 }
 
 #signup{
-    width: 75%;
-    margin:100px auto;
-    min-height: 450px;
+    width: 50%;
+    margin:20px auto;
+    height: 500px;
 }
 
-.showcase{
+/*.showcase{
     display: grid;
     grid-template-rows: 1fr  1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -257,7 +269,6 @@ img{
     animation-name: twinkle-2;
     animation-duration: 5s;
 }
-
 @keyframes twinkle-1{
     50%{
         transform: scale(0.9);
@@ -269,42 +280,41 @@ img{
         transform: scale(0.9);
         opacity: 0.8;
     }
-}
+}*/
 
                 /*-------------------------------Landing Page Styling-----------------------------------*/
-#redirect{
+/*#redirect{
     width: 35%;
     height: 250px;
     margin: 100px auto;
     border: none;
     border-radius: 5px;
     box-shadow: 0 0 15px gray;
-
 }
 #redirect h3{
     text-align: center;
     font-size: 2.5rem;
-}
+}*/
 
 /*------------Media Queries---------------*/
 
 /*----Large Screens*/
 @media (min-width:850px) and (max-width:1010px){
     .inner-wrap{
-        width: 70%;
-        margin: 100px auto;
+        width: 80%;
+        margin: 0px auto;
     }
     .title{
         width: 90%;
     }
-    #signup{
+    /*#signup{
         width: 80%;
     }
     
     .program-img{
         width: 75%;
         height: 160px;
-    }
+    }*/
 
 }
 
@@ -312,14 +322,14 @@ img{
 
 @media (min-width:750px) and (max-width:850px){
     .inner-wrap{
-        width: 80%;
-        margin: 100px auto;
+        width: 85%;
+        margin: 0px auto;
     }
     .title{
         margin: 0 auto;
     }
     
-    .showcase{
+    /*.showcase{
         display: grid;
         grid-template-rows: 1fr  1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr;
@@ -341,12 +351,12 @@ img{
        /* grid-template-areas: "top top"
                             "middle middle"
                             "bottom bottom"
-                            "last";*/
+                            "last";
     }
     #signup{
         width: 70%;
         height: 450px;
-    }
+    }*/
 }
 
 @media(min-width:400px) and (max-width:750px){
@@ -360,9 +370,9 @@ img{
     }
     .inner-wrap{
         width: 70%;
-        margin: 50px auto;
+        margin: 10px auto;
     }
-    .container2{
+    /*.container2{
         padding: 0;
         display: grid;
         grid-template-columns: 100%;
@@ -383,9 +393,9 @@ img{
         height: 30px;
         text-align: center;
         grid-column: 1/3;
-    }
+    }*/
     #signup{
-        width: 80%;
+        width: 70%;
         height: 550px;
     }
 }
@@ -402,9 +412,9 @@ img{
     }
     .inner-wrap{
         width:90%;
-        margin: 50px auto;
+        margin: 10px auto;
     }
-    .container2{
+    /*.container2{
         padding: 0;
         display: grid;
         grid-template-columns: 100%;
@@ -415,20 +425,19 @@ img{
     .program-img{
         width: 70%;
         height: 120px;
-    }
+    }*/
 
     #signup{
         width: 90%;
         height: 550px;
     }
 
-    .header{
+    /*.header{
         width: 100%;
         height: 30px;
         text-align: center;
         grid-column: 1/3;
     }
-
     .showcase{
         display: grid;
         grid-template-rows: 1fr  1fr 1fr 1fr 1fr;
@@ -436,5 +445,5 @@ img{
         margin: 0px auto;
         width: 98%;
         height: 100%;
-    }
+    }*/
 }
